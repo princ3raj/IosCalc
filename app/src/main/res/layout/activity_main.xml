@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:background="@android:color/transparent"
+        android:id="@+id/formula"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+
+        android:layout_height="match_parent"
+        android:layout_weight="2.1"
+        android:fontFamily="sans-serif-light"
+        android:gravity="right|bottom"
+        android:maxLines="1"
+        android:textColor="@android:color/background_light"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical|right"
+        android:maxLines="1"
+        android:textColor="@android:color/background_light"
+        android:textSize="84sp"
+        android:textStyle="bold"
+        tools:text="64" />
+
+
+    <!-- layer one !-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/acimageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ac"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/factorial"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/factorial"
+            android:layout_weight="1"
+            />
+
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/percentage"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/power"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/divide"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+    <!-- layer Two !-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/number_7"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number7"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/number_8"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number8"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/number_9"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number9"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/multi"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/multi"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+
+    <!-- layer three !-->
+
+
+    <LinearLayout
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:layout_marginTop="14dp"
+        android:layout_weight="2"
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/number4" />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number5"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/number6" />
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/minus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/minus" />
+
+
+    </LinearLayout>
+
+
+
+    <!-- layer four !-->
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:id="@+id/LinerLayout4"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number1"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/number2" />
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/number_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/number3" />
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/divide" />
+
+
+    </LinearLayout>
+
+
+    <!-- layer five !-->
+
+
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:id="@+id/LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_weight="2"
+       >
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+
+            android:layout_marginLeft="14dp"
+            android:id="@+id/zero"
+            android:layout_weight="0.67"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/number0" />
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:id="@+id/comma"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/dot"
+             />
+
+
+
+
+
+
+        <ImageView
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/equal"
+            android:id="@+id/equal"
+            android:layout_weight="1" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
